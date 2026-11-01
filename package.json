@@ -1,0 +1,13 @@
+{
+  "name": "michaelseanmiller-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Michael Sean Miller — live guitarist, wedding host & DJ in Sacramento, CA.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "test": "node --test"
+  }
+}

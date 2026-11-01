@@ -1,0 +1,60 @@
+  <!-- ═══ CENTER STAGE — NEXT SHOW + LIVE PERFORMANCE VIDEO ═══
+       The poster on the left is the soonest upcoming show in src/data/shows.json.
+       When no show is upcoming it is left out and the video fills the stage.
+       Any further upcoming shows appear in the grid below. -->
+  <section class="showcase" id="video">
+    <h2 class="sr-only">Watch Michael Sean Miller perform live</h2>
+    <div class="showcase-inner{{ showcaseClass }}">
+
+{{#if featured}}
+      <div class="showcase-art">
+        <a class="showcase-art-link" href="{{ featured.linkUrl }}" target="_blank" rel="noopener" aria-label="{{ featured.ariaLabel }}">
+          <img fetchpriority="high" decoding="async" width="{{ featured.width }}" height="{{ featured.height }}" src="{{ featured.posterUrl }}" alt="{{ featured.posterAlt }}">
+        </a>
+        <p class="show-actions">
+          <span>Add to calendar</span>
+          <a href="{{ featured.googleUrl }}" target="_blank" rel="noopener">Google</a>
+          <a href="{{ featured.icsUrl }}">Apple / Outlook</a>
+        </p>
+      </div>
+
+{{/if}}
+      <div class="showcase-player">
+        <div class="video-frame">
+          <div class="video-frame-inner">
+            <iframe
+              src="https://www.youtube.com/embed/{{ site.video.id }}?rel=0&amp;modestbranding=1&amp;playsinline=1"
+              title="Michael Sean Miller — Live Performance"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="showcase-caption">
+          <span>{{ site.video.caption }}</span>
+          <a href="https://youtu.be/{{ site.video.id }}" target="_blank" rel="noopener">Watch on YouTube &#8599;</a>
+        </div>
+      </div>
+
+    </div>
+{{#if more}}
+
+    <div class="upcoming-label">More upcoming shows</div>
+    <div class="upcoming-grid{{ moreClass }}">
+{{#each more}}
+      <div class="flyer-item">
+        <a class="flyer-card" href="{{ item.linkUrl }}" target="_blank" rel="noopener" aria-label="{{ item.ariaLabel }}">
+          <img loading="lazy" decoding="async" width="{{ item.width }}" height="{{ item.height }}" src="{{ item.posterUrl }}" alt="{{ item.posterAlt }}">
+          <div class="flyer-overlay"><span class="flyer-overlay-text">{{ item.dateLabel }} &middot; {{ item.timeLabel }}</span></div>
+        </a>
+        <p class="show-actions">
+          <span>Add to calendar</span>
+          <a href="{{ item.googleUrl }}" target="_blank" rel="noopener">Google</a>
+          <a href="{{ item.icsUrl }}">Apple / Outlook</a>
+        </p>
+      </div>
+{{/each}}
+    </div>
+{{/if}}
+  </section>

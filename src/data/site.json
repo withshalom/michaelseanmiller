@@ -1,0 +1,32 @@
+{
+  "name": "Michael Sean Miller",
+  "url": "https://michaelseanmiller.com",
+  "email": "michael@michaelseanmiller.com",
+  "timezone": "America/Los_Angeles",
+  "links": {
+    "weddings": "https://michaelweddingmusic.com",
+    "lessonsBooking": "https://calendly.com/michael-michaelseanmiller/30min",
+    "instagram": "https://www.instagram.com/michaelseanmiller",
+    "youtube": "https://youtube.com/@MichaelSeanMiller",
+    "builder": "https://withshalom.com"
+  },
+  "video": {
+    "id": "j3rV56Ou9ps",
+    "caption": "Full band · Live on the Blvd · El Dorado Hills Town Center"
+  },
+  "lessons": {
+    "image": "posters/2026-10-lessons-halloween.webp",
+    "alt": "Michael Sean Miller Thriller — Thrilling music lessons for all ages and skill levels at The Nicholson Music Co. in Folsom. Halloween special: claim your complimentary M.A.P. assessment by November 2.",
+    "flag": "Halloween Special · Claim by November 2",
+    "flagEnds": "2026-11-02T23:59:00-08:00"
+  },
+  "seo": {
+    "title": "Michael Sean Miller — Live Guitarist & Wedding DJ | Sacramento",
+    "description": "Live classical and Spanish guitar, wedding hosting and DJ entertainment across Sacramento, El Dorado Hills, Granite Bay and the Gold Country. Book Michael Sean Miller for weddings, restaurants and private events.",
+    "shareTitle": "Michael Sean Miller — Live Guitarist & Wedding DJ",
+    "ogDescription": "Live classical and Spanish guitar, wedding hosting and DJ entertainment across Sacramento, El Dorado Hills and Granite Bay.",
+    "twitterDescription": "Live classical and Spanish guitar, wedding hosting and DJ entertainment across Northern California.",
+    "shareImage": "/og-image.jpg",
+    "shareImageAlt": "Michael Sean Miller performing live on stage with a classical guitar"
+  }
+}

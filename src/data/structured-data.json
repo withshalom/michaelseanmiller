@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "{{ site.url }}/#website",
+      "url": "{{ site.url }}/",
+      "name": "Michael Sean Miller",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "{{ site.url }}/#michael"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#michael",
+      "name": "Michael Sean Miller",
+      "url": "{{ site.url }}/",
+      "jobTitle": "Live Guitarist, Wedding Host and DJ",
+      "description": "Sacramento-based professional guitarist, wedding host and DJ entertainer specialising in classical and Spanish guitar for weddings, restaurants and private events.",
+      "knowsAbout": [
+        "Classical guitar",
+        "Spanish guitar",
+        "Wedding entertainment",
+        "DJ services",
+        "Live music"
+      ],
+      "sameAs": [
+        "{{ site.links.instagram }}",
+        "{{ site.links.youtube }}",
+        "{{ site.links.weddings }}"
+      ]
+    },
+    {
+      "@type": [
+        "LocalBusiness",
+        "EntertainmentBusiness"
+      ],
+      "@id": "{{ site.url }}/#business",
+      "name": "Michael Sean Miller — Live Music, DJ & Events",
+      "url": "{{ site.url }}/",
+      "image": "{{ site.url }}{{ site.seo.shareImage }}",
+      "email": "{{ site.email }}",
+      "priceRange": "$$",
+      "founder": {
+        "@id": "{{ site.url }}/#michael"
+      },
+      "employee": {
+        "@id": "{{ site.url }}/#michael"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "CA",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Sacramento"
+        },
+        {
+          "@type": "City",
+          "name": "El Dorado Hills"
+        },
+        {
+          "@type": "City",
+          "name": "Granite Bay"
+        },
+        {
+          "@type": "City",
+          "name": "Roseville"
+        },
+        {
+          "@type": "City",
+          "name": "Folsom"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Northern California"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Live classical and Spanish guitar performance"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Wedding host and master of ceremonies"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "DJ entertainment for weddings and private events"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Music lessons for all ages (guitar, ukulele, bass, piano, voice, cello, violin, trumpet) at The Nicholson Music Co., Folsom"
+          }
+        }
+      ],
+      "sameAs": [
+        "{{ site.links.instagram }}",
+        "{{ site.links.youtube }}"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+  <!-- ═══ FEATURED — THRILLING MUSIC LESSONS / COMPLIMENTARY M.A.P. ASSESSMENT ═══ -->
+  <section class="lessons" id="lessons">
+    <div class="lessons-inner">
+      <a class="lessons-art" href="{{ site.links.lessonsBooking }}" target="_blank" rel="noopener" aria-label="Book your complimentary M.A.P. assessment with Michael Sean Miller — opens his booking calendar">
+        <img src="assets/{{ site.lessons.image }}" width="{{ site.lessons.width }}" height="{{ site.lessons.height }}" loading="lazy" decoding="async"
+             alt="{{ site.lessons.alt }}">
+      </a>
+      <div>
+{{#if site.lessons.flagVisible}}
+        <div class="charity-flag">{{ site.lessons.flag }}</div>
+{{/if}}
+        <div class="section-label">Music Lessons &middot; The Nicholson Music Co., Folsom</div>
+        <h2 class="section-title">Thrilling music lessons<br><em>for all ages &amp; skill levels</em></h2>
+        <p class="charity-lede">Start with a complimentary <strong>M.A.P. Assessment</strong> &mdash; Musical Assessment &amp; Progression. Discover your strengths, explore your goals, and receive a personalized roadmap for your musical journey with Michael Sean Miller.</p>
+        <ul class="lessons-list">
+          <li>Guitar</li>
+          <li>Ukulele</li>
+          <li>Bass</li>
+          <li>Piano</li>
+          <li>Beginning voice</li>
+          <li>Beginning cello</li>
+          <li>Beginning violin</li>
+          <li>Beginning trumpet</li>
+        </ul>
+        <p class="charity-note" style="margin: -0.75rem 0 1.75rem;">All ages &middot; Beginners to advanced &middot; Personalized instruction</p>
+        <div class="hero-actions">
+          <a href="{{ site.links.lessonsBooking }}" target="_blank" rel="noopener" class="btn-primary">Book Your Complimentary M.A.P. Assessment</a>
+        </div>
+      </div>
+    </div>
+  </section>

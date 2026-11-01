@@ -1,0 +1,33 @@
+[
+  {
+    "id": "2026-10-30-monster-bash",
+    "title": "Michael Sean Thriller — Monster Bash Costume Party",
+    "venue": "Tilly’s Pub at Granite Bay Golf Club",
+    "city": "Granite Bay, CA",
+    "start": "2026-10-30T19:30:00-07:00",
+    "end": "2026-10-30T22:30:00-07:00",
+    "poster": "2026-10-30-monster-bash.webp",
+    "posterAlt": "Granite Bay Golf Club presents Michael Sean Thriller — Monster Bash Costume Party. Friday October 30th, 7:30 to 10:30 PM at Tilly’s Pub at Granite Bay Golf Club. Live music, karaoke by request, costume contest, DJ and dancing.",
+    "cta": {
+      "label": "event form",
+      "url": "https://docs.google.com/forms/d/1HDxXLaNTxNTPtxYvnLwUrCpUDapL1-y7mu3RjzgpOsA/viewform"
+    },
+    "description": "Live music, karaoke by request, costume contest and DJ. Presented by Granite Bay Golf Club."
+  },
+  {
+    "id": "2026-11-14-shine-bright-gala",
+    "title": "Shine Bright Gala for CASA of El Dorado",
+    "venue": "Serrano Country Club",
+    "city": "El Dorado Hills, CA",
+    "start": "2026-11-14T17:30:00-08:00",
+    "end": "2026-11-14T21:30:00-08:00",
+    "poster": "2026-11-14-shine-bright-gala.webp",
+    "posterAlt": "CASA Court Appointed Special Advocates for Children presents the Shine Bright Gala. Saturday, November 14, 5:30 to 9:30 PM at Serrano Country Club, El Dorado Hills. Entertainment by Michael Sean — DJ, live music, event entertainment.",
+    "ariaLabel": "Shine Bright Gala for CASA of El Dorado, with entertainment by Michael Sean — Saturday, November 14 at Serrano Country Club. Opens ticket page in a new tab",
+    "cta": {
+      "label": "ticket page",
+      "url": "https://casaeldorado.ejoinme.org/MyEvents/2026ShineBrightGala/EventTickets/tabid/1599830/Default.aspx"
+    },
+    "description": "Shine Bright Gala for CASA — Court Appointed Special Advocates for Children. An evening dedicated to the belief that all children deserve a chance at a brighter future. Entertainment by Michael Sean: DJ, live music and event entertainment."
+  }
+]

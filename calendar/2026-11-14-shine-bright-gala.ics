@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Michael Sean Miller//Website//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:2026-11-14-shine-bright-gala@michaelseanmiller.com
+DTSTAMP:20261101T000000Z
+DTSTART:20261115T013000Z
+DTEND:20261115T053000Z
+SUMMARY:Shine Bright Gala for CASA of El Dorado
+LOCATION:Serrano Country Club\, El Dorado Hills\, CA
+DESCRIPTION:Shine Bright Gala for CASA — Court Appointed Special Advocate
+ s for Children. An evening dedicated to the belief that all children deser
+ ve a chance at a brighter future. Entertainment by Michael Sean: DJ\, live
+  music and event entertainment.\n\nTicket page: https://casaeldorado.ejoin
+ me.org/MyEvents/2026ShineBrightGala/EventTickets/tabid/1599830/Default.asp
+ x\n\nMore: https://michaelseanmiller.com/
+URL:https://casaeldorado.ejoinme.org/MyEvents/2026ShineBrightGala/EventTick
+ ets/tabid/1599830/Default.aspx
+END:VEVENT
+END:VCALENDAR

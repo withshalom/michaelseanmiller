@@ -42,10 +42,16 @@ else
 fi
 
 WORK="$(mktemp -d)"
+TEMP_BRANCH=""
 cleanup() {
   git worktree remove --force "$WORK" >/dev/null 2>&1 || true
   rm -rf "$WORK"
   git worktree prune
+  # The first publish works on a temporary branch. Once pushed it lives on as the
+  # web branch on GitHub, so the local copy is dropped instead of left lying around.
+  if [ -n "$TEMP_BRANCH" ]; then
+    git branch -D "$TEMP_BRANCH" >/dev/null 2>&1 || true
+  fi
 }
 trap cleanup EXIT
 
@@ -55,8 +61,9 @@ if [ "$EXISTS" = 1 ]; then
   git worktree add --quiet --detach "$WORK" "origin/$BRANCH"
 else
   # First publish: a brand-new branch that shares no history with the source code.
+  TEMP_BRANCH="publish-$$"
   git worktree add --quiet --detach "$WORK"
-  git -C "$WORK" checkout --quiet --orphan "publish-$$"
+  git -C "$WORK" checkout --quiet --orphan "$TEMP_BRANCH"
   git -C "$WORK" rm -rfq --ignore-unmatch .
 fi
 

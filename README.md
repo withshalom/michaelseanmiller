@@ -61,4 +61,20 @@ Weddings, restaurant residencies, private events or family celebrations: reach o
 
 ---
 
+## For the developer
+
+This branch, `michael`, holds the **source** of the website. The finished site is built into the `web` branch, and `main` is left alone.
+
+```bash
+npm run dev      # preview at http://localhost:8080, rebuilds on every save
+npm test         # run the checks
+npm run build    # build the site into dist/
+```
+
+Push to `michael` and a GitHub Action tests the code, builds the site and publishes it to `web`. Adding a show is one entry in `src/data/shows.json` plus a poster image.
+
+Full walkthrough (adding shows, changing links, publishing, one-time setup, and how this was built): **[docs/UPDATING.md](docs/UPDATING.md)**
+
+---
+
 <sub>Website by [WithShalom Design](https://withshalom.com)</sub>

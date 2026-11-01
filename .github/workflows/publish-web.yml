@@ -1,0 +1,39 @@
+name: Build and publish site
+
+# Every push to the michael branch: run the checks, build the site, and publish the result
+# to the web branch. GitHub Pages serves the web branch.
+#
+# The nightly run (it drops shows that have ended) and the manual "Run workflow" button only
+# work once this file is on the repository's default branch. See docs/UPDATING.md.
+on:
+  push:
+    branches: [michael]
+  schedule:
+    - cron: '30 9 * * *' # 1:30 AM Pacific (2:30 AM in summer)
+  workflow_dispatch:
+
+permissions:
+  contents: write # lets the job update the web branch
+
+concurrency:
+  group: publish-web
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Check the code
+        run: npm test
+
+      - name: Build the site
+        run: npm run build
+
+      - name: Publish to the web branch
+        run: bash scripts/publish-web.sh
